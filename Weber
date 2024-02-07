@@ -1,0 +1,32 @@
+# this is a program which help 3x+1 problem
+test=0
+import matplotlib.pyplot as plt
+list1 = []
+list2 = []
+a = int(input())
+b=1
+
+while b ==1 :
+    if a%2 == 0 :
+        a=a/2
+    elif a == 1:
+        b=b+1
+    else:
+        a=3*a+1
+    list1.append(a)
+    
+print(list1)
+
+for i in range(int(len(list1))):
+    list2.append(i*(int(max(list1))/int(len(list1)) ))
+    test= test+1
+    
+
+# print(list2)
+
+x = list2
+y = list1
+
+plt.plot(x, y, 'ro--', linewidth=2, markersize=6)
+plt.show()
+
